@@ -102,8 +102,8 @@ def main():
     )
 
     df["tag_encoding_length"] = df.tag_encoding.apply(len)
-    sigma = df.tag_encoding_length.mean() + df.tag_encoding_length.std()
-    df = df[df.tag_encoding_length <= sigma * SIGMA].copy()
+    sigma = df.tag_encoding_length.mean() + (df.tag_encoding_length.std()*SIGMA)
+    df = df[df.tag_encoding_length <= sigma].copy()
 
     df.to_excel(OUTPUT_FILEPATH, index=False)
 

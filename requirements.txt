@@ -4,6 +4,7 @@ cssselect==1.2.0
 et-xmlfile==1.1.0
 filelock==3.9.0
 idna==3.4
+jedi>=0.10
 lxml==4.9.2
 numpy>=1.21.6
 openpyxl==3.1.1

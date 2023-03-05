@@ -14,6 +14,8 @@ setup_common_args = {
 }
 setuptools.setup(
     name="html_encoder",
+    author="Dan Kelman",
+    author_email="danjkelman@gmail.com",
     version="1.0.0",
     install_requires=_read_reqs("requirements.txt"),
     **setup_common_args,

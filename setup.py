@@ -10,7 +10,7 @@ def _read_reqs(relpath):
 
 setup_common_args = {
     "include_package_data": True,
-    "packages": setuptools.find_packages(where=".", include=["app"]),
+    "packages": setuptools.find_packages(where=".", include=["app"]).append("html_encoder"),
 }
 setuptools.setup(
     name="html_encoder",

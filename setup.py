@@ -18,5 +18,5 @@ setuptools.setup(
     author_email="danjkelman@gmail.com",
     version="1.0.0",
     install_requires=_read_reqs("requirements.txt"),
-    # **setup_common_args,
+    **setup_common_args,
 )

@@ -14,7 +14,7 @@ setup_common_args = {
 }
 setuptools.setup(
     name="html_encoder",
-    version="0.0.1",
+    version="1.0.0",
     install_requires=_read_reqs("requirements.txt"),
     **setup_common_args,
 )
